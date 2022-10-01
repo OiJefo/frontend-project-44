@@ -1,0 +1,23 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "brain-games.js",
+  "main": "brain-games.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OiJefo/frontend-project-44.git"
+  },
+  "author": "OiJefo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OiJefo/frontend-project-44/issues"
+  },
+  "homepage": "https://github.com/OiJefo/frontend-project-44#readme",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  }
+}
