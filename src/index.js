@@ -45,7 +45,7 @@ export function calc() {
     const operand = getRandomInt(3);
     const expectedAnswer = operation(v1, v2, operand);
     const userAnswer = readlineSync.question('Your answer: ');
-    if (userAnswer === expectedAnswer) {
+    if (userAnswer == expectedAnswer) {
       console.log('Correct!');
     } else {
       console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${expectedAnswer}.`);
