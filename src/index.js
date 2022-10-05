@@ -45,7 +45,46 @@ export function calc() {
     const operand = getRandomInt(3);
     const expectedAnswer = operation(v1, v2, operand);
     const userAnswer = readlineSync.question('Your answer: ');
-    if (userAnswer == expectedAnswer) {
+    if (+userAnswer === +expectedAnswer) {
+      console.log('Correct!');
+    } else {
+      console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${expectedAnswer}.`);
+      console.log(`Let's try again, ${userName}!`);
+      return;
+    }
+  }
+  console.log(`Congratulations, ${userName}!`);
+}
+function divisor(d1, d2) {
+  const result1 = [];
+  const result2 = [];
+  const result3 = [];
+  for (let i = 0; i <= d1; i += 1) {
+    if (d1 % i === 0) {
+      result1.push(i);
+    }
+  }
+  for (let i = 0; i <= d2; i += 1) {
+    if (d2 % i === 0) {
+      result2.push(i);
+    }
+  }
+  for (let i = 0; i < result1.length; i += 1) {
+    if (result2.includes(result1[i])) {
+      result3.push(result1[i]);
+    }
+  }
+  return (result3[result3.length - 1]);
+}
+export function gcd() {
+  console.log('Find the greatest common divisor of given numbers.');
+  for (let i = 0; i < 3; i += 1) {
+    const d1 = getRandomInt(100);
+    const d2 = getRandomInt(100);
+    console.log('Question: ', `${d1} ${d2}`);
+    const expectedAnswer = divisor(d1, d2);
+    const userAnswer = readlineSync.question('Your answer: ');
+    if (+userAnswer === +expectedAnswer) {
       console.log('Correct!');
     } else {
       console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${expectedAnswer}.`);
