@@ -1,5 +1,6 @@
 import readlineSync from 'readline-sync';
 
+// ======================== EVEN GAME ========================
 console.log('Welcome to the Brain Games!');
 const getName = () => readlineSync.question('May I have your name? ');
 const userName = getName();
@@ -8,6 +9,9 @@ export const greeting = () => {
 };
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
+}
+function getRandomIntInRange(min,max) {
+  return Math.floor(Math.random() * (max - min) + min);
 }
 function isEven(x) {
   return x % 2 === 0;
@@ -28,6 +32,7 @@ export function evenGame() {
     }
   }
   console.log(`Congratulations, ${userName}!`);
+// ======================== CALCULATOR GAME ========================
 }
 function operation(v1, v2, operand) {
   switch (operand) {
@@ -54,6 +59,7 @@ export function calc() {
     }
   }
   console.log(`Congratulations, ${userName}!`);
+// ======================== GREATEST COMMON DIVISOR GAME ========================
 }
 function divisor(d1, d2) {
   const result1 = [];
@@ -83,6 +89,38 @@ export function gcd() {
     const d2 = getRandomInt(100);
     console.log('Question: ', `${d1} ${d2}`);
     const expectedAnswer = divisor(d1, d2);
+    const userAnswer = readlineSync.question('Your answer: ');
+    if (+userAnswer === +expectedAnswer) {
+      console.log('Correct!');
+    } else {
+      console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${expectedAnswer}.`);
+      console.log(`Let's try again, ${userName}!`);
+      return;
+    }
+  }
+  console.log(`Congratulations, ${userName}!`);
+}
+// ======================== PROGRESSION GAME ========================
+let numbers, hiddenNumber;
+function hideNumberInString(x,y) {
+  let array = [];
+  for (let i=0; i < 10; i +=1) {
+    x += y;
+    array.push(x);
+  }
+  let hiddenNumberPos = getRandomInt(10);
+  hiddenNumber = array[hiddenNumberPos];
+  array[hiddenNumberPos] = "..";
+  numbers = array.join(" ");
+}
+export function progression() {
+  console.log('Find the greatest common divisor of given numbers.');
+  for (let i = 0; i < 3; i += 1) {
+    const start = getRandomInt(100);
+    const step = getRandomIntInRange(1,10);
+    hideNumberInString(start,step);
+    console.log('Question: ', numbers);
+    const expectedAnswer = hiddenNumber;
     const userAnswer = readlineSync.question('Your answer: ');
     if (+userAnswer === +expectedAnswer) {
       console.log('Correct!');
