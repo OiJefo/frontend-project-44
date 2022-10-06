@@ -10,7 +10,7 @@ export const greeting = () => {
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
-function getRandomIntInRange(min,max) {
+function getRandomIntInRange(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
 }
 function isEven(x) {
@@ -101,28 +101,55 @@ export function gcd() {
   console.log(`Congratulations, ${userName}!`);
 }
 // ======================== PROGRESSION GAME ========================
-let numbers, hiddenNumber;
-function hideNumberInString(x,y) {
-  let array = [];
-  for (let i=0; i < 10; i +=1) {
+let numbers; let
+  hiddenNumber;
+function hideNumberInString(x, y) {
+  const array = [];
+  for (let i = 0; i < 10; i += 1) {
     x += y;
     array.push(x);
   }
-  let hiddenNumberPos = getRandomInt(10);
+  const hiddenNumberPos = getRandomInt(10);
   hiddenNumber = array[hiddenNumberPos];
-  array[hiddenNumberPos] = "..";
-  numbers = array.join(" ");
+  array[hiddenNumberPos] = '..';
+  numbers = array.join(' ');
 }
 export function progression() {
   console.log('Find the greatest common divisor of given numbers.');
   for (let i = 0; i < 3; i += 1) {
     const start = getRandomInt(100);
-    const step = getRandomIntInRange(1,10);
-    hideNumberInString(start,step);
+    const step = getRandomIntInRange(1, 10);
+    hideNumberInString(start, step);
     console.log('Question: ', numbers);
     const expectedAnswer = hiddenNumber;
     const userAnswer = readlineSync.question('Your answer: ');
     if (+userAnswer === +expectedAnswer) {
+      console.log('Correct!');
+    } else {
+      console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${expectedAnswer}.`);
+      console.log(`Let's try again, ${userName}!`);
+      return;
+    }
+  }
+  console.log(`Congratulations, ${userName}!`);
+}
+// ======================== PRIME GAME ========================
+function isPrime(a) {
+  for (let i = 2; i < a; i += 1) {
+    if (a % i === 0) {
+      return 'no';
+    }
+      return 'yes';
+  }
+}
+export function prime() {
+  console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
+  for (let i = 0; i < 3; i += 1) {
+    const numberGetChecked = getRandomInt(1000);
+    console.log('Question: ', numberGetChecked);
+    const expectedAnswer = isPrime(numberGetChecked);
+    const userAnswer = readlineSync.question('Your answer: ');
+    if (userAnswer === expectedAnswer) {
       console.log('Correct!');
     } else {
       console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${expectedAnswer}.`);
