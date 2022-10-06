@@ -7,7 +7,7 @@
 <a href="https://asciinema.org/a/qE8cjjgznkK29F2jpiuUsXBtz">EVEN</a><br>
 <a href="https://asciinema.org/a/a8OnTcZfj2xUJ2RPo6O5cAuar">CALC</a><br>
 <a href="https://asciinema.org/a/LMPZAaycCwDQxZpkQTudQt8DN">GCD</a><br>
-<a href="https://asciinema.org/a/11p801MjNo1uDIvXBiYUnC8zP">PROGRESSION</a>
+<a href="https://asciinema.org/a/11p801MjNo1uDIvXBiYUnC8zP">PROGRESSION</a><br>
 <a href="https://asciinema.org/a/ToUqniz6VMadSI54R38FsmjE9">PRIME</a>
 
 
