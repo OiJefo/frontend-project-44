@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 import { getUser } from './cli.js';
-
+// ======================== COMMON LOGIC ========================
 export default function answerCheck(expectedAnswer) {
   const name = getUser();
   let userAnswer = readlineSync.question('Your answer: ');

@@ -1,10 +1,8 @@
 #!/usr/bin/env node
-import greeting from '../src/cli.js';
-import answerCheck from '../src/index.js';
-import getRandomIntInRange from '../src/helper.js';
-
+import greeting from '../cli.js';
+import answerCheck from '../index.js';
+import getRandomIntInRange from '../helper.js';
 // ======================== EVEN GAME ========================
-
 greeting();
 function evenGame() {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');

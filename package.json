@@ -18,12 +18,12 @@
   },
   "homepage": "https://github.com/OiJefo/frontend-project-44#readme",
   "bin": {
-    "games": "bin/brain-games.js",
-    "even": "bin/brain-even.js",
-    "calc": "bin/brain-calc.js",
-    "gcd": "bin/brain-gcd.js",
-    "progression": "bin/brain-progression.js",
-    "prime": "bin/brain-prime.js"
+    "games": "src/games/brain-games.js",
+    "even": "src/games/brain-even.js",
+    "calc": "src/games/brain-calc.js",
+    "gcd": "src/games/brain-gcd.js",
+    "progression": "src/games/brain-progression.js",
+    "prime": "src/games/brain-prime.js"
 
   },
   "dependencies": {

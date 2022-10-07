@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-import greeting from '../src/cli.js';
-import answerCheck from '../src/index.js';
-import getRandomIntInRange from '../src/helper.js';
+import greeting from '../cli.js';
+import answerCheck from '../index.js';
+import getRandomIntInRange from '../helper.js';
 // ======================== PROGRESSION GAME ========================
 greeting();
 let numbers;
