@@ -4,7 +4,7 @@ import getRandomIntInRange from '../helper.js';
 // ======================== PROGRESSION GAME ========================
 let numbers; let
   hiddenNumber;
-const description = 'Find the greatest common divisor of given numbers.';
+const description = 'What number is missing in the progression?';
 function hideNumberInString(value1, value2) {
   const array = [];
   let accum = value1;
