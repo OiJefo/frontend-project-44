@@ -7,13 +7,15 @@ function divisor(d1, d2) {
   if (d1 === 0) { return d2; }
   while (d2 !== 0) {
     if (d1 > d2) {
+      // eslint-disable-next-line no-param-reassign
       d1 -= d2;
     } else {
+      // eslint-disable-next-line no-param-reassign
       d2 -= d1;
     }
   }
   return d1;
-};
+}
 function game() {
   const d1 = getRandomIntInRange(0, 100);
   const d2 = getRandomIntInRange(0, 100);
