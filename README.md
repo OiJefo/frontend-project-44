@@ -14,19 +14,19 @@
 <strong>brain-prime</strong> - checking if a number is prime</p>
 
 <h2>Brain-games demonstration</h2>
-1. Even game
+<p>1. Even game</p>
 <a href="https://asciinema.org/a/qE8cjjgznkK29F2jpiuUsXBtz" target="_blank"><img src="https://asciinema.org/a/qE8cjjgznkK29F2jpiuUsXBtz.svg" /></a>
 
-2. Calc game
+<p>2. Calc game</p>
 <a href="https://asciinema.org/a/a8OnTcZfj2xUJ2RPo6O5cAuar" target="_blank"><img src="https://asciinema.org/a/a8OnTcZfj2xUJ2RPo6O5cAuar.svg" /></a>
 
-3. Gcd game
+<p>3. Gcd game</p>
 <a href="https://asciinema.org/a/LMPZAaycCwDQxZpkQTudQt8DN" target="_blank"><img src="https://asciinema.org/a/LMPZAaycCwDQxZpkQTudQt8DN.svg" /></a>
 
-4. Progression game
+<p>4. Progression game</p>
 <a href="https://asciinema.org/a/11p801MjNo1uDIvXBiYUnC8zP" target="_blank"><img src="https://asciinema.org/a/11p801MjNo1uDIvXBiYUnC8zP.svg" /></a>
 
-5. Prime game
+<p>5. Prime game</p>
 <a href="https://asciinema.org/a/ToUqniz6VMadSI54R38FsmjE9" target="_blank"><img src="https://asciinema.org/a/ToUqniz6VMadSI54R38FsmjE9.svg" /></a>
 
 

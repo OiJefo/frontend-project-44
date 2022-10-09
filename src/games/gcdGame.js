@@ -4,26 +4,16 @@ import getRandomIntInRange from '../helper.js';
 // ======================== GREATEST COMMON DIVISOR GAME ========================
 const description = 'Find the greatest common divisor of given numbers.';
 function divisor(d1, d2) {
-  const result1 = [];
-  const result2 = [];
-  const result3 = [];
-  for (let i = 0; i <= d1; i += 1) {
-    if (d1 % i === 0) {
-      result1.push(i);
+  if (d1 === 0) { return d2; }
+  while (d2 !== 0) {
+    if (d1 > d2) {
+      d1 -= d2;
+    } else {
+      d2 -= d1;
     }
   }
-  for (let i = 0; i <= d2; i += 1) {
-    if (d2 % i === 0) {
-      result2.push(i);
-    }
-  }
-  for (let i = 0; i < result1.length; i += 1) {
-    if (result2.includes(result1[i])) {
-      result3.push(result1[i]);
-    }
-  }
-  return (result3[result3.length - 1]);
-}
+  return d1;
+};
 function game() {
   const d1 = getRandomIntInRange(0, 100);
   const d2 = getRandomIntInRange(0, 100);
