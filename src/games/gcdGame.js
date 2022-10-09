@@ -1,9 +1,8 @@
 #!/usr/bin/env node
-import greeting from '../cli.js';
 import answerCheck from '../index.js';
 import getRandomIntInRange from '../helper.js';
 // ======================== GREATEST COMMON DIVISOR GAME ========================
-greeting();
+const description = 'Find the greatest common divisor of given numbers.';
 function divisor(d1, d2) {
   const result1 = [];
   const result2 = [];
@@ -25,14 +24,13 @@ function divisor(d1, d2) {
   }
   return (result3[result3.length - 1]);
 }
-function gcd() {
-  console.log('Find the greatest common divisor of given numbers.');
-  for (let i = 0; i < 3; i += 1) {
-    const d1 = getRandomIntInRange(0, 100);
-    const d2 = getRandomIntInRange(0, 100);
-    console.log('Question: ', `${d1} ${d2}`);
-    const expectedAnswer = divisor(d1, d2);
-    answerCheck(expectedAnswer);
-  }
+function game() {
+  const d1 = getRandomIntInRange(0, 100);
+  const d2 = getRandomIntInRange(0, 100);
+  const question = `${d1} ${d2}`;
+  const expectedAnswer = divisor(d1, d2);
+  return [question, String(expectedAnswer)];
 }
-gcd();
+export default function gcd() {
+  answerCheck(description, game);
+}

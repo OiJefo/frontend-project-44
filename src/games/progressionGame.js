@@ -1,13 +1,10 @@
 #!/usr/bin/env node
-import greeting from '../cli.js';
 import answerCheck from '../index.js';
 import getRandomIntInRange from '../helper.js';
 // ======================== PROGRESSION GAME ========================
-greeting();
-let numbers;
-let hiddenNumber;
-const start = getRandomIntInRange(0, 100);
-const step = getRandomIntInRange(1, 10);
+let numbers; let
+  hiddenNumber;
+const description = 'Find the greatest common divisor of given numbers.';
 function hideNumberInString(value1, value2) {
   const array = [];
   let accum = value1;
@@ -20,13 +17,14 @@ function hideNumberInString(value1, value2) {
   array[hiddenNumberPos] = '..';
   numbers = array.join(' ');
 }
-function progression() {
-  console.log('Find the greatest common divisor of given numbers.');
-  for (let i = 0; i < 3; i += 1) {
-    hideNumberInString(start, step);
-    console.log('Question: ', numbers);
-    const expectedAnswer = hiddenNumber;
-    answerCheck(expectedAnswer);
-  }
+function game() {
+  const start = getRandomIntInRange(0, 100);
+  const step = getRandomIntInRange(1, 10);
+  hideNumberInString(start, step);
+  const question = numbers;
+  const expectedAnswer = hiddenNumber;
+  return [question, String(expectedAnswer)];
 }
-progression();
+export default function progressionGame() {
+  answerCheck(description, game);
+}
