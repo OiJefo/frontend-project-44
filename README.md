@@ -13,16 +13,21 @@
 <strong>brain-progression</strong> - find a missing number in arithmetic progression<br>
 <strong>brain-prime</strong> - checking if a number is prime</p>
 
-<h2>Brain-games asciinemas</h2>
-<script id="asciicast-qE8cjjgznkK29F2jpiuUsXBtz" src="https://asciinema.org/a/qE8cjjgznkK29F2jpiuUsXBtz.js" async></script>
+<h2>Brain-games demonstration</h2>
+1. Even game
+<a href="https://asciinema.org/a/qE8cjjgznkK29F2jpiuUsXBtz" target="_blank"><img src="https://asciinema.org/a/qE8cjjgznkK29F2jpiuUsXBtz.svg" /></a><br>
 
-<a href="https://asciinema.org/a/qE8cjjgznkK29F2jpiuUsXBtz" target="_blank"><img src="https://asciinema.org/a/qE8cjjgznkK29F2jpiuUsXBtz.svg" /></a>
+2. Calc game
+<a href="https://asciinema.org/a/a8OnTcZfj2xUJ2RPo6O5cAuar" target="_blank"><img src="https://asciinema.org/a/a8OnTcZfj2xUJ2RPo6O5cAuar.svg" /></a><br>
 
-<a href="https://asciinema.org/a/qE8cjjgznkK29F2jpiuUsXBtz">EVEN</a><br>
-<a href="https://asciinema.org/a/a8OnTcZfj2xUJ2RPo6O5cAuar">CALC</a><br>
-<a href="https://asciinema.org/a/LMPZAaycCwDQxZpkQTudQt8DN">GCD</a><br>
-<a href="https://asciinema.org/a/11p801MjNo1uDIvXBiYUnC8zP">PROGRESSION</a><br>
-<a href="https://asciinema.org/a/ToUqniz6VMadSI54R38FsmjE9">PRIME</a>
+3. Gcd game
+<a href="https://asciinema.org/a/LMPZAaycCwDQxZpkQTudQt8DN" target="_blank"><img src="https://asciinema.org/a/LMPZAaycCwDQxZpkQTudQt8DN.svg" /></a><br>
+
+4. Progression game
+<a href="https://asciinema.org/a/11p801MjNo1uDIvXBiYUnC8zP" target="_blank"><img src="https://asciinema.org/a/11p801MjNo1uDIvXBiYUnC8zP.svg" /></a><br>
+
+5. Progression game
+<a href="https://asciinema.org/a/ToUqniz6VMadSI54R38FsmjE9" target="_blank"><img src="https://asciinema.org/a/ToUqniz6VMadSI54R38FsmjE9.svg" /></a>
 
 
 
