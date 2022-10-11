@@ -20,20 +20,19 @@ make link</p>
 
 <h2>Brain-games demonstration</h2>
 <p>1. Even game</p>
-<a href="https://asciinema.org/a/qE8cjjgznkK29F2jpiuUsXBtz" target="_blank"><img src="https://asciinema.org/a/qE8cjjgznkK29F2jpiuUsXBtz.svg" /></a>
-
+<a href="https://asciinema.org/a/527456" target="_blank"><img src="https://asciinema.org/a/527456.svg" /></a>
+<hr>
 <p>2. Calc game</p>
-<a href="https://asciinema.org/a/a8OnTcZfj2xUJ2RPo6O5cAuar" target="_blank"><img src="https://asciinema.org/a/a8OnTcZfj2xUJ2RPo6O5cAuar.svg" /></a>
-
+<a href="https://asciinema.org/a/527461" target="_blank"><img src="https://asciinema.org/a/527461.svg" /></a>
+<hr>
 <p>3. Gcd game</p>
-<a href="https://asciinema.org/a/LMPZAaycCwDQxZpkQTudQt8DN" target="_blank"><img src="https://asciinema.org/a/LMPZAaycCwDQxZpkQTudQt8DN.svg" /></a>
-
+<a href="https://asciinema.org/a/527460" target="_blank"><img src="https://asciinema.org/a/527460.svg" /></a>
+<hr>
 <p>4. Progression game</p>
-<a href="https://asciinema.org/a/11p801MjNo1uDIvXBiYUnC8zP" target="_blank"><img src="https://asciinema.org/a/11p801MjNo1uDIvXBiYUnC8zP.svg" /></a>
-
+<a href="https://asciinema.org/a/525991" target="_blank"><img src="https://asciinema.org/a/525991.svg" /></a>
+<hr>
 <p>5. Prime game</p>
-<a href="https://asciinema.org/a/ToUqniz6VMadSI54R38FsmjE9" target="_blank"><img src="https://asciinema.org/a/ToUqniz6VMadSI54R38FsmjE9.svg" /></a>
-
+<a href="https://asciinema.org/a/526004" target="_blank"><img src="https://asciinema.org/a/526004.svg" /></a>
 
 
 
