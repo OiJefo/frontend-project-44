@@ -12,11 +12,6 @@ function getProgression(value1, value2) {
     accum += value2;
     array.push(accum);
   }
-// вот эту часть перенеси пожалуйста в соседнюю функцию 
-// попробуй сгенерить индекс исходя из длины массива для 
-// скрытого элемента, сохранить сам ответ (скрытый элемент), 
-// отдельно сохранить вопрос (прогрессию со скрытым элементом)
-
   const hiddenNumberPos = getRandomIntInRange(0, progressionLength);
   hiddenNumber = array[hiddenNumberPos];
   array[hiddenNumberPos] = '..';
