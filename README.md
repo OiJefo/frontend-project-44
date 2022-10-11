@@ -7,8 +7,8 @@
 <p>The project is five mini math games: checking the parity of a number, mathematical operations, finding the greatest common divisor, finding a number from progression, checking the simplicity of a number. 3 tries - 1 chance to win.</p>
 
 <h2>Setup, publish and run</h2>
-<p>make install
-make publish
+<p>make install<br>
+make publish<br>
 make link</p>
 
 <h2>List of games</h2>
