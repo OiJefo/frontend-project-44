@@ -6,6 +6,11 @@
 <h1>Description</h1>
 <p>The project is five mini math games: checking the parity of a number, mathematical operations, finding the greatest common divisor, finding a number from progression, checking the simplicity of a number. 3 tries - 1 chance to win.</p>
 
+<h2>Setup, publish and run</h2>
+<p>make install
+make publish
+make link</p>
+
 <h2>List of games</h2>
 <p><strong>brain-even</strong> - check if a number is even<br>
 <strong>brain-calc</strong> - calculate simple expressions<br>
