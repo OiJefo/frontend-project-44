@@ -4,7 +4,7 @@ import getRandomIntInRange from '../helper.js';
 // ======================== EVEN GAME ========================
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 function isEven(number) {
-  return number % 2 === 0 ? 'yes' : 'no'
+  return number % 2 === 0 ? 'yes' : 'no';
 }
 function getAnswerAndQuestion() {
   const question = getRandomIntInRange(1, 100);
