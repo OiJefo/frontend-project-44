@@ -1,29 +1,28 @@
 #!/usr/bin/env node
-import answerCheck from '../index.js';
-import getRandomIntInRange from '../helper.js';
+import runGame from '../index.js';
+import getRandomNumber from '../utils.js';
 // ======================== PROGRESSION GAME ========================
-let hiddenNumber;
-const progressionLength = 10;
 const description = 'What number is missing in the progression?';
-function getProgression(value1, value2) {
-  const array = [];
-  let accum = value1;
+const progressionLength = 10;
+const getProgression = (startNum, step) => {
+  const progression = [];
   for (let i = 0; i < progressionLength; i += 1) {
-    accum += value2;
-    array.push(accum);
+    progression.push(startNum + step * i);
   }
-  const hiddenNumberPos = getRandomIntInRange(0, progressionLength);
-  hiddenNumber = array[hiddenNumberPos];
-  array[hiddenNumberPos] = '..';
-  return array.join(' ');
-}
-function getAnswerAndQuestion() {
-  const start = getRandomIntInRange(0, 100);
-  const step = getRandomIntInRange(1, 10);
-  const question = getProgression(start, step);
-  const expectedAnswer = hiddenNumber;
-  return [question, String(expectedAnswer)];
-}
-export default function progressionGame() {
-  answerCheck(description, getAnswerAndQuestion);
-}
+  return progression;
+};
+const getQuestionAndAnswer = () => {
+  const startNum = getRandomNumber(0, 50);
+  const step = getRandomNumber(2, 8);
+  const progression = getProgression(startNum, step);
+  const randomIndex = getRandomNumber(0, 9);
+  const correctAnswer = String(progression[randomIndex]);
+  progression[randomIndex] = '..';
+  const question = progression.join(' ');
+
+  return [question, correctAnswer];
+};
+const progressionGame = () => {
+  runGame(description, getQuestionAndAnswer);
+};
+export default progressionGame;

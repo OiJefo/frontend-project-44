@@ -1,16 +1,17 @@
 #!/usr/bin/env node
-import answerCheck from '../index.js';
-import getRandomIntInRange from '../helper.js';
+import runGame from '../index.js';
+import getRandomNumber from '../utils.js';
 // ======================== EVEN GAME ========================
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 function isEven(number) {
-  return number % 2 === 0 ? 'yes' : 'no';
+  return number % 2 === 0;
 }
-function getAnswerAndQuestion() {
-  const question = getRandomIntInRange(1, 100);
-  const expectedAnswer = isEven(question);
-  return [question, expectedAnswer];
-}
-export default function evenGame() {
-  answerCheck(description, getAnswerAndQuestion);
-}
+const getQuestionAndAnswer = () => {
+  const question = getRandomNumber(1, 100);
+  const correctAnswer = (isEven(question)) ? 'yes' : 'no';
+  return [question, correctAnswer];
+};
+const evenGame = () => {
+  runGame(description, getQuestionAndAnswer);
+};
+export default evenGame;

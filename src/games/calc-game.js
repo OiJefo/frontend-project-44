@@ -1,10 +1,10 @@
 #!/usr/bin/env node
-import answerCheck from '../index.js';
-import getRandomIntInRange from '../helper.js';
+import runGame from '../index.js';
+import getRandomNumber from '../utils.js';
 // ======================== CALCULATOR GAME ========================
 const description = 'What is the result of the expression?';
 // eslint-disable-next-line consistent-return
-function calculate(value1, value2, operand) {
+const calculate = (value1, value2, operand) => {
   if (operand === '+') {
     return value1 + value2;
   } if (operand === '-') {
@@ -12,16 +12,17 @@ function calculate(value1, value2, operand) {
   } if (operand === '*') {
     return value1 * value2;
   }
-}
-function getAnswerAndQuestion() {
+};
+const getQuestionAndAnswer = () => {
   const operands = ['+', '-', '*'];
-  const value1 = getRandomIntInRange(0, 100);
-  const value2 = getRandomIntInRange(0, 100);
-  const operand = operands[getRandomIntInRange(0, 2)];
-  const expectedAnswer = calculate(value1, value2, operand);
+  const value1 = getRandomNumber(0, 100);
+  const value2 = getRandomNumber(0, 100);
+  const operand = operands[getRandomNumber(0, 2)];
+  const correctAnswer = String(calculate(value1, value2, operand));
   const question = `${value1} ${operand} ${value2}`;
-  return [question, String(expectedAnswer)];
-}
-export default function calcGame() {
-  answerCheck(description, getAnswerAndQuestion);
-}
+  return [question, correctAnswer];
+};
+const calcGame = () => {
+  runGame(description, getQuestionAndAnswer);
+};
+export default calcGame;
